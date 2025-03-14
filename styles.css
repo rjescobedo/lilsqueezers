@@ -1,0 +1,193 @@
+/* Root Colors & Sizes */
+
+:root {
+    /* Primary Colors */
+    --green-color: #a7e926;
+    --orange-color: #ea9801;
+    --yellow-color: #faee0c;
+  
+    /* Neutral Colors */
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+  
+    /* Font Settings */
+    --font-primary: 'Arial', sans-serif;
+    --font-secondary: 'Georgia', serif;
+  
+    /* Responsive Font Sizes */
+    --font-responsive-xs: clamp(12px, 1.5vw, 14px);
+    --font-responsive-sm: clamp(14px, 2vw, 16px);
+    --font-responsive-md: clamp(16px, 3vw, 20px);
+    --font-responsive-lg: clamp(20px, 4vw, 24px);
+    --font-responsive-xl: clamp(24px, 5vw, 32px);
+    --font-responsive-xxl: clamp(32px, 6vw, 40px);
+    --font-responsive-xxxl: clamp(40px, 8vw, 48px);
+  
+    /* Border Radius */
+    --border-radius: 8px;
+  
+    /* Shadows */
+    --box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.5); 
+    --box-shadow-intense: 0px 8px 16px rgba(255, 255, 255, 0.7);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .thick-underline {
+    border-bottom: 2px solid var(--light-color); /* Adjust thickness and color */
+    width: 50%;
+    margin: auto;
+  }
+
+/* Header */
+.navbar {
+    background: var(--green-color) !important; /* Fully transparent */
+    box-shadow: none !important; /* Remove any shadow */
+    border: none !important; /* Remove any border */
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    font-size: var(--font-responsive-md);
+    color: var(--dark-color);
+    transition: color .3s ease;
+}
+
+.nav-link:hover {
+    color: var(--orange-color);
+}
+
+.navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.bg-body-tertiary {
+    padding: 0;
+}
+
+.offcanvas-body {
+    padding-top: 0;
+}
+
+.offcanvas {
+    background-color: var(--green-color);
+}
+
+.offcanvas.offcanvas-start {
+    width: 75vw;
+  }
+
+  .social-item {
+    margin: .5rem;
+  }
+
+/* Payment Section */
+.payment-title h1 {
+    font-size: var(--font-responsive-xxxl);
+    color: var(--green-color);
+}
+
+.payment-title h2 {
+    font-size: var(--font-responsive-lg);
+    color: var(--orange-color);
+}
+
+.payment-container p {
+font-size: var(--font-responsive-md);
+}
+
+.payment-container strong {
+    color: var(--green-color);
+}
+
+
+.venmo-code {
+    width: 200px;
+    background-color: var(--orange-color);
+    padding: .5rem;
+    border-radius: var(--border-radius);
+}
+
+.zelle-code {
+    width: 200px;
+    background-color: var(--green-color);
+    padding: .5rem;
+    border-radius: var(--border-radius);
+}
+
+/* About Us Section */
+.container {
+    max-width: 800px;
+}
+
+.container h2 {
+    font-size: var(--font-responsive-xxl);
+    color: var(--green-color);
+}
+
+.container p {
+    font-size: var(--font-responsive-md);
+    color: var(--orange-color);
+}
+
+.about-content p {
+    font-size: var(--font-responsive-md);
+    color: var(--light-color);
+}
+
+/* Find Us Section */
+.card {
+    background: var(--light-color); /* Soft lemonade yellow */
+    border: 4px solid var(--green-color);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+.card h5 {
+    color: var(--orange-color); /* Warm orange */
+    font-weight: bold;
+    font-size: var(--font-responsive-md);
+}
+.card p {
+    color: var(--dark-color);
+    margin-bottom: 5px;
+    font-size: var(--font-responsive-sm);
+}
+
+.follow-text strong{
+    color: var(--light-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--green-color);
+    margin: 0;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.footer-container img {
+    width: 100px;
+}
+
+.list-item {
+    margin-top: .5rem;
+}

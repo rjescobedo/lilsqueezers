@@ -16,5 +16,8 @@
     "url": "https://github.com/rjescobedo/lilsqueezers/issues"
   },
   "homepage": "https://github.com/rjescobedo/lilsqueezers#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }
