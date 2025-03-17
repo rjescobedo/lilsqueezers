@@ -2,8 +2,8 @@
 
 :root {
     /* Primary Colors */
-    --green-color: #a7e926;
-    --orange-color: #ea9801;
+    --green-color: rgb(167, 232, 38);
+    --orange-color: rgb(234, 152, 1);
     --yellow-color: #faee0c;
   
     /* Neutral Colors */
@@ -40,6 +40,7 @@
     background-color: var(--dark-color);
     color: var(--light-color);
     transition: background-color 0.5s ease, color 0.5s ease;
+    font-family: "Chewy", system-ui;
   }
 
   .thick-underline {
@@ -56,7 +57,7 @@
 }
 
 .navbar-brand img {
-    width: 60px;
+    width: 50px;
 }
 
 .nav-item {
@@ -118,12 +119,24 @@ font-size: var(--font-responsive-md);
     color: var(--green-color);
 }
 
+.payment-method p {
+    margin-top: .5rem;
+}
+
+.qr-codes {
+    gap: 1rem;
+}
 
 .venmo-code {
     width: 200px;
     background-color: var(--orange-color);
     padding: .5rem;
     border-radius: var(--border-radius);
+    transition: all .3s ease-in-out;
+}
+
+.venmo-code:hover {
+    box-shadow: 0px 8px 16px rgba(234, 152, 1, .7);
 }
 
 .zelle-code {
@@ -131,6 +144,18 @@ font-size: var(--font-responsive-md);
     background-color: var(--green-color);
     padding: .5rem;
     border-radius: var(--border-radius);
+    transition: all .3s ease-in-out;
+}
+
+.zelle-code:hover{
+    box-shadow: 0px 8px 16px rgba(167, 232, 38, .7);
+}
+
+
+@media (min-width: 768px) {
+    .qr-codes {
+        gap: 3rem;
+    }
 }
 
 /* About Us Section */
@@ -185,7 +210,7 @@ font-size: var(--font-responsive-md);
 }
 
 .footer-container img {
-    width: 100px;
+    width: 75px;
 }
 
 .list-item {
