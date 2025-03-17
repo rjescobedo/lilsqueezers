@@ -102,6 +102,10 @@
   }
 
 /* Title Section */
+.title-container img {
+    width: 100px;
+}
+
 .title-container h1 {
     font-size: var(--font-responsive-xxxxl);
     color: var(--green-color);
@@ -115,6 +119,12 @@
 .carousel {
     max-width: 700px;
     margin: 3rem auto;
+}
+
+@media (min-width: 992px) {
+    .title-container img {
+        width: 150px;
+    }
 }
 
   /* About Us Section */
