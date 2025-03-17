@@ -2,8 +2,8 @@
 
 :root {
     /* Primary Colors */
-    --green-color: rgb(167, 232, 38);
-    --orange-color: rgb(234, 152, 1);
+    --green-color: #88d257;
+    --orange-color: #ea9801;
     --yellow-color: #faee0c;
   
     /* Neutral Colors */
@@ -14,14 +14,15 @@
     --font-primary: 'Arial', sans-serif;
     --font-secondary: 'Georgia', serif;
   
-    /* Responsive Font Sizes */
-    --font-responsive-xs: clamp(12px, 1.5vw, 14px);
-    --font-responsive-sm: clamp(14px, 2vw, 16px);
-    --font-responsive-md: clamp(16px, 3vw, 20px);
-    --font-responsive-lg: clamp(20px, 4vw, 24px);
-    --font-responsive-xl: clamp(24px, 5vw, 32px);
-    --font-responsive-xxl: clamp(32px, 6vw, 40px);
-    --font-responsive-xxxl: clamp(40px, 8vw, 48px);
+  /* Enhanced Responsive Font Sizes */
+    --font-responsive-xs: clamp(12px, 1.8vw, 14px);
+    --font-responsive-sm: clamp(14px, 2.2vw, 18px);
+    --font-responsive-md: clamp(16px, 3vw, 22px);
+    --font-responsive-lg: clamp(20px, 4.5vw, 28px);
+    --font-responsive-xl: clamp(24px, 5.5vw, 36px);
+    --font-responsive-xxl: clamp(32px, 7vw, 48px);
+    --font-responsive-xxxl: clamp(40px, 9vw, 60px);
+    --font-responsive-xxxxl: clamp(48px, 10vw, 72px); /* Extra large option */
   
     /* Border Radius */
     --border-radius: 8px;
@@ -100,15 +101,91 @@
     margin: .5rem;
   }
 
-/* Payment Section */
-.payment-title h1 {
-    font-size: var(--font-responsive-xxxl);
+/* Title Section */
+.title-container h1 {
+    font-size: var(--font-responsive-xxxxl);
     color: var(--green-color);
 }
 
-.payment-title h2 {
-    font-size: var(--font-responsive-lg);
+.title-container h2 {
+    font-size: var(--font-responsive-xl);
     color: var(--orange-color);
+}
+
+.carousel {
+    max-width: 700px;
+    margin: 3rem auto;
+}
+
+  /* About Us Section */
+.container {
+    max-width: 800px;
+}
+
+.container h2 {
+    font-size: var(--font-responsive-xxl);
+    color: var(--green-color);
+}
+
+.container p {
+    font-size: var(--font-responsive-md);
+    color: var(--yellow-color);
+}
+
+.about-content p {
+    font-size: var(--font-responsive-md);
+    color: var(--light-color);
+}
+
+.container strong {
+    color: var(--orange-color);
+}
+
+/* Photo Section */
+.box {
+    margin: auto;
+    background: radial-gradient(ellipse at center, #ffeb3b 0%, #fbc02d 100%);
+    border-radius: 50% / 40%;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    height: 180px; /* Adjust as needed */
+    transform: rotate(-5deg); /* Slight tilt for a fun effect */
+    position: relative;
+  }
+  
+  .box img {
+    position: absolute;
+    width: 130px; /* Adjust as needed */
+    height: 130px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+  
+  .img1 {
+    top: 8px;
+    left: -50px;
+    transform: rotate(5deg);
+  }
+  
+  .img2 {
+    top: 20px;
+    left: 85px;
+    transform: rotate(5deg);
+  }
+  
+  .img3 {
+    top: 31px;
+    right: -50px;
+    transform: rotate(5deg);
+  }
+
+
+/* Payment Section */
+.payment-container h2 {
+    font-size: var(--font-responsive-xl);
+    color: var(--green-color);
 }
 
 .payment-container p {
@@ -116,7 +193,7 @@ font-size: var(--font-responsive-md);
 }
 
 .payment-container strong {
-    color: var(--green-color);
+    color: var(--orange-color);
 }
 
 .payment-method p {
@@ -158,47 +235,62 @@ font-size: var(--font-responsive-md);
     }
 }
 
-/* About Us Section */
-.container {
-    max-width: 800px;
-}
-
-.container h2 {
-    font-size: var(--font-responsive-xxl);
-    color: var(--green-color);
-}
-
-.container p {
-    font-size: var(--font-responsive-md);
-    color: var(--orange-color);
-}
-
-.about-content p {
-    font-size: var(--font-responsive-md);
-    color: var(--light-color);
-}
-
 /* Find Us Section */
-.card {
-    background: var(--light-color); /* Soft lemonade yellow */
-    border: 4px solid var(--green-color);
-    border-radius: 12px;
-    padding: 1rem;
+.lemon-card {
+    background: radial-gradient(ellipse at center, #ffeb3b 0%, #fbc02d 100%);
+    border-radius: 50% / 40%;
+    padding: 20px;
     text-align: center;
-}
-.card h5 {
-    color: var(--orange-color); /* Warm orange */
-    font-weight: bold;
-    font-size: var(--font-responsive-md);
-}
-.card p {
-    color: var(--dark-color);
-    margin-bottom: 5px;
-    font-size: var(--font-responsive-sm);
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    height: 180px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: rotate(-5deg); /* Slight tilt for a fun effect */
+    position: relative;
+    overflow: hidden;
 }
 
-.follow-text strong{
-    color: var(--light-color);
+.lemon-card::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #e0a800;
+    border-radius: 50%;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lemon-card h5 {
+    font-size: var(--font-responsive-md);
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.lemon-card p {
+    font-size: var(--font-responsive-sm);
+    color: var(--dark-color);
+    margin: 5px 0;
+}
+
+.lemon-card a {
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lemon-card a:hover {
+    text-decoration: underline;
+}
+
+
+.lemon-card strong{
+    color: var(--orange-color);
 }
 
 /* Footer */
