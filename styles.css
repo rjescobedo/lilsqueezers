@@ -157,27 +157,27 @@
   
   .box img {
     position: absolute;
-    width: 130px; /* Adjust as needed */
-    height: 130px; /* Adjust as needed */
+    width: 120px; /* Adjust as needed */
+    height: 120px; /* Adjust as needed */
     object-fit: cover;
     border-radius: var(--border-radius);
   }
   
   .img1 {
     top: 8px;
-    left: -50px;
+    left: -40px;
     transform: rotate(5deg);
   }
   
   .img2 {
     top: 20px;
-    left: 85px;
+    left: 90px;
     transform: rotate(5deg);
   }
   
   .img3 {
     top: 31px;
-    right: -50px;
+    right: -40px;
     transform: rotate(5deg);
   }
 
