@@ -165,7 +165,7 @@
   }
   
   .img1 {
-    top: 8px;
+    top: -10px;
     left: -35px;
     transform: rotate(5deg);
   }
@@ -177,7 +177,7 @@
   }
   
   .img3 {
-    top: 31px;
+    top: 50px;
     right: -35px;
     transform: rotate(5deg);
   }
