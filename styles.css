@@ -10,10 +10,6 @@
     --light-color: #f8f9fa;
     --dark-color: #212529;
   
-    /* Font Settings */
-    --font-primary: 'Arial', sans-serif;
-    --font-secondary: 'Georgia', serif;
-  
   /* Enhanced Responsive Font Sizes */
     --font-responsive-xs: clamp(12px, 1.8vw, 14px);
     --font-responsive-sm: clamp(14px, 2.2vw, 18px);
